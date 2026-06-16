@@ -14,12 +14,12 @@ spec:
         app: db
     spec:
       containers:
-        - name: cont-1
-          image: mustafaflm.azurecr.io/db:129
+        - name: cont-2
+          image: goparapunaresh/devopsapp:dbimage
           ports:
             - containerPort: 3306
       imagePullSecrets:
-        - name: flm
+        - name: dockerhub
 
 
 
